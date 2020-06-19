@@ -1,0 +1,29 @@
+div#home{
+	height: 100vh;
+	box-sizing: border-box;
+	padding: 200px;
+
+	.text, .links{
+		display: inline-block;
+		height: 100%;
+		width: 50%;
+	}
+
+	.text{
+		float: left;
+		position: relative;
+		
+		&:after{
+			content: '';
+			height: 100%;
+			width: 1px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			background-color: gray;
+			opacity: 0.2;
+		}
+	}
+
+	.links{ text-align: right;}
+}
