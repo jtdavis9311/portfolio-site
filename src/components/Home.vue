@@ -3,7 +3,7 @@
 
 		<div class="text">
 			<h1>Jordan Davis</h1>
-			<p>Front End Engineer, Milkshake Studio</p>
+			<p>Front End Engineer, <a href="https://milkshake.studio/">Milkshake Studio</a></p>
 		</div>
 		
 		<div class="links">
