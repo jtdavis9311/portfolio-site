@@ -4,6 +4,11 @@
 		<div class="text">
 			<h1>Jordan Davis</h1>
 			<p>Front End Engineer, <a href="https://milkshake.studio/">Milkshake Studio</a></p>
+
+			<div class="links">
+				<a href="https://www.linkedin.com/in/jordantd/"><Github></Github></a>
+				<a href="https://github.com/jtdavis9311"><Linkedin></Linkedin></a>
+			</div>
 		</div>
 		
 		<div class="links">
@@ -20,10 +25,15 @@
 </template>
 
 <script>
+import Github from './github';
+import Linkedin from './linkedin';
 
 export default {
 	name: 'Home',
-	components: {}
+	components: {
+		Github,
+		Linkedin
+	}
 }
 
 </script>

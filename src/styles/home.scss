@@ -23,6 +23,20 @@ div#home{
 			background-color: gray;
 			opacity: 0.2;
 		}
+
+		.links{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: auto;;
+
+			a{
+				margin: 0 20px 0 0;
+				float: left;
+
+				svg{ width: 20px; }
+			}
+		}
 	}
 
 	.links{ text-align: right;}
