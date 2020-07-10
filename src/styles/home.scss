@@ -1,43 +1,120 @@
 div#home{
 	height: 100vh;
+	overflow: hidden;
 	box-sizing: border-box;
-	padding: 200px;
-
-	.text, .links{
+	
+	.left, .right{
 		display: inline-block;
+		box-sizing: border-box;
 		height: 100%;
-		width: 50%;
 	}
-
-	.text{
+	
+	.left{
+		width: 40%;
+		padding: 200px 0 200px 100px;
 		float: left;
 		position: relative;
-		
-		&:after{
-			content: '';
-			height: 100%;
-			width: 1px;
-			position: absolute;
-			right: 0;
-			top: 0;
-			background-color: gray;
-			opacity: 0.2;
-		}
+		background-color: #636F57;
+		z-index: 5;
+		color: white;
 
 		.links{
 			position: absolute;
-			bottom: 0;
-			left: 0;
+			bottom: 200px;
+			left: 100px;
 			height: auto;;
 
 			a{
 				margin: 0 20px 0 0;
 				float: left;
 
-				svg{ width: 20px; }
+				svg{
+					width: 20px;
+
+					path{ fill: white; }
+
+					&:hover{
+						path{ fill: #7CCD7C; }
+					}
+				}
 			}
 		}
 	}
 
-	.links{ text-align: right;}
+	.right{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		justify-content: space-evenly;
+
+		a{
+			width: 60vw;
+			font-size: 60px;
+			overflow: hidden;
+			padding: 30px 0 30px 42vw;
+			margin: 0;
+			color: #7CCD7C;
+			border-bottom: 2px solid #7CCD7C;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-start;
+			flex: 1;
+
+			transition: opacity 250ms 0ms ease;
+			
+			p{
+				display: none;
+
+				&:first-child{ display: block; }
+			}
+			
+			&:hover{
+				width: 200vw;
+				opacity: 1 !important;
+				justify-content: space-around;
+
+				p{
+					display: block;
+					filter: blur(0px) !important;
+				}
+	
+				animation: marquee 5s linear infinite;
+				-moz-animation: marquee 5s linear infinite;
+				-webkit-animation: marquee 5s linear infinite;
+				
+				// &:nth-child(odd){
+				// 	animation: marqueeodd 5s linear infinite;
+				// 	-moz-animation: marqueeodd 5s linear infinite;
+				// 	-webkit-animation: marqueeodd 5s linear infinite;
+				// }
+			}
+
+		}
+
+		// index items not hovered on - blur
+		&:hover{
+			a{
+				opacity: 0.4;
+
+				p{ filter: blur(2px); }
+			}
+		}
+	}
 }
+
+
+@keyframes marquee {
+	0% { transform: translateX(-100vw); }
+	100% { transform: translateX(0vw); }
+}
+
+// @keyframes marqueeodd {
+// 	0% { transform: translateX(0vw);}
+// 	100% { transform: translateX(-100vw); }
+// }
