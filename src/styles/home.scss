@@ -87,12 +87,6 @@ div#home{
 				animation: marquee 5s linear infinite;
 				-moz-animation: marquee 5s linear infinite;
 				-webkit-animation: marquee 5s linear infinite;
-				
-				// &:nth-child(odd){
-				// 	animation: marqueeodd 5s linear infinite;
-				// 	-moz-animation: marqueeodd 5s linear infinite;
-				// 	-webkit-animation: marqueeodd 5s linear infinite;
-				// }
 			}
 
 		}
@@ -106,6 +100,42 @@ div#home{
 			}
 		}
 	}
+
+	@media screen and (max-width: 766px) {
+		height: unset;
+		overflow: scroll;
+
+		.left{
+			width: 100vw;
+			position: relative;
+			padding: 50px;
+			height: unset;
+
+			.links{
+				position: relative;
+				bottom: unset;
+				left: unset;
+			}
+		}
+
+		.right{
+			position: relative;
+
+			a{
+				width: 100vw;
+				padding: 30px;
+				font-size: 36px;
+
+				&:hover{
+					width: 500vw;
+
+					animation: phoneMarquee 5s linear infinite;
+					-moz-animation: phoneMarquee 5s linear infinite;
+					-webkit-animation: phoneMarquee 5s linear infinite;
+				}
+			}
+		}
+	}
 }
 
 
@@ -114,7 +144,7 @@ div#home{
 	100% { transform: translateX(0vw); }
 }
 
-// @keyframes marqueeodd {
-// 	0% { transform: translateX(0vw);}
-// 	100% { transform: translateX(-100vw); }
-// }
+@keyframes phoneMarquee {
+	0% { transform: translateX(-250vw); }
+	100% { transform: translateX(0vw); }
+}
