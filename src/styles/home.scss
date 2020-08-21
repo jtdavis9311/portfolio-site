@@ -22,20 +22,23 @@ div#home{
 			position: absolute;
 			bottom: 200px;
 			left: 100px;
-			height: auto;;
+			height: auto;
+			display: flex;
 
 			a{
 				margin: 0 20px 0 0;
 				float: left;
+				bottom: 0;
+				align-self: flex-end;
 
 				svg{
 					width: 20px;
+					background-color: #636F57;
+					transition: all 250ms 0ms ease;
 
 					path{ fill: white; }
 
-					&:hover{
-						path{ fill: #7CCD7C; }
-					}
+					&:hover{ width: 100px; }
 				}
 			}
 		}
@@ -54,12 +57,12 @@ div#home{
 
 		a{
 			width: 60vw;
-			font-size: 60px;
+			font-size: 40px;
 			overflow: hidden;
 			padding: 30px 0 30px 42vw;
 			margin: 0;
-			color: #7CCD7C;
-			border-bottom: 2px solid #7CCD7C;
+			color: #636F57;
+			border-bottom: 20px solid #636F57;
 			display: flex;
 			flex-direction: row;
 			align-items: center;
@@ -73,14 +76,16 @@ div#home{
 
 				&:first-child{ display: block; }
 			}
+
+			&:last-child{ border-bottom: none; }
 			
 			&:hover{
 				width: 200vw;
-				opacity: 1 !important;
 				justify-content: space-around;
-
+				
 				p{
 					display: block;
+					opacity: 1 !important;
 					filter: blur(0px) !important;
 				}
 	
@@ -93,10 +98,9 @@ div#home{
 
 		// index items not hovered on - blur
 		&:hover{
-			a{
+			a p{
 				opacity: 0.4;
-
-				p{ filter: blur(2px); }
+				filter: blur(2px);
 			}
 		}
 	}
@@ -123,7 +127,7 @@ div#home{
 
 			a{
 				width: 100vw;
-				padding: 30px;
+				padding: 30px 20px;
 				font-size: 36px;
 
 				&:hover{
