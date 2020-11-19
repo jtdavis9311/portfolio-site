@@ -82,6 +82,7 @@ div#home{
 			p{
 				opacity: 0;
 				transition: all 300ms 0ms ease;
+				transform-origin: left center;
 
 				&:first-child{ opacity: 1; }
 			}
@@ -95,7 +96,6 @@ div#home{
 					opacity: 1 !important;
 					filter: blur(0px) !important;
 					transform: scale(1.5);
-					transform-origin: left center;
 				}
 	
 				// animation: marquee 5s linear infinite;
