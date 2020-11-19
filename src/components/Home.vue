@@ -6,8 +6,8 @@
 			<p>Front End Engineer, <a class="milkshake" href="https://milkshake.studio/">Milkshake Studio</a></p>
 
 			<div class="links">
-				<a href="https://www.linkedin.com/in/jordantd/"><Github></Github></a>
-				<a href="https://github.com/jtdavis9311"><Linkedin></Linkedin></a>
+				<a href="https://github.com/jtdavis9311"><Github></Github></a>
+				<a href="https://www.linkedin.com/in/jordantd/"><Linkedin></Linkedin></a>
 			</div>
 		</div>
 		
