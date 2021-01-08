@@ -1,7 +1,7 @@
 <template>
 	<div id="home">
 
-		<div :class="['left', hover]">
+		<div class="left">
 			<h1>Jordan Davis</h1>
 			<p>Front End Engineer, <a class="milkshake" href="https://milkshake.studio/">Milkshake Studio</a></p>
 
