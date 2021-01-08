@@ -1,5 +1,6 @@
 div#home{
 	height: 100vh;
+	width: 100vw;
 	overflow: hidden;
 	box-sizing: border-box;
 	
@@ -97,10 +98,6 @@ div#home{
 					filter: blur(0px) !important;
 					transform: scale(1.5);
 				}
-	
-				// animation: marquee 5s linear infinite;
-				// -moz-animation: marquee 5s linear infinite;
-				// -webkit-animation: marquee 5s linear infinite;
 			}
 
 		}
@@ -112,6 +109,53 @@ div#home{
 				opacity: 0;
 
 				&:first-child{ opacity: 0.4; }
+			}
+		}
+	}
+
+	@media screen and (max-width: 939px) and  (min-width: 767px) {
+		height: unset;
+		overflow: scroll;
+
+		.left{
+			width: 100vw;
+			position: relative;
+			padding: 50px;
+			height: unset;
+
+			.links{
+				position: relative;
+				bottom: unset;
+				left: unset;
+			}
+		}
+
+		.right{
+			position: relative;
+			flex-direction: row;
+			align-items: stretch;
+			flex-wrap: wrap;
+			width: 100vw;
+
+			a{
+				width: 50vw;
+				padding: 30px 50px;
+				box-sizing: border-box;
+				font-size: 36px;
+				justify-content: center;
+				flex: unset;
+
+				p{
+					white-space: nowrap;
+					transform-origin: center;
+				}
+
+				&:nth-child(odd):not(:last-child){ border-right: 3px solid #1e2322; }
+			}
+
+			// index items not hovered on - blur
+			&:hover{
+				a p{ filter: blur(0px); }
 			}
 		}
 	}
@@ -138,28 +182,17 @@ div#home{
 
 			a{
 				width: 100vw;
-				padding: 30px 20px;
+				padding: 30px 50px;
+				box-sizing: border-box;
 				font-size: 36px;
 
-				&:hover{
-					width: 500vw;
+				p{ transform-origin: center; }
+			}
 
-					animation: phoneMarquee 5s linear infinite;
-					-moz-animation: phoneMarquee 5s linear infinite;
-					-webkit-animation: phoneMarquee 5s linear infinite;
-				}
+			// index items not hovered on - blur
+			&:hover{
+				a p{ filter: blur(0px); }
 			}
 		}
 	}
-}
-
-
-@keyframes marquee {
-	0% { transform: translateX(-100vw); }
-	100% { transform: translateX(0vw); }
-}
-
-@keyframes phoneMarquee {
-	0% { transform: translateX(-250vw); }
-	100% { transform: translateX(0vw); }
 }
