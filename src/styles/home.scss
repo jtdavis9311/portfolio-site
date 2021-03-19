@@ -88,6 +88,14 @@ div#home{
 				&:first-child{ opacity: 1; }
 			}
 
+			svg{
+				opacity: 0;
+				width: auto;
+				height: 12px;
+				transition: all 350ms 0ms ease;
+				margin-left: 15px;
+			}
+
 			&:last-child{ border-bottom: none; }
 			
 			&:hover{
@@ -97,6 +105,11 @@ div#home{
 					opacity: 1 !important;
 					filter: blur(0px) !important;
 					transform: scale(1.5);
+				}
+
+				svg{
+					opacity: 1;
+					height: 20px;
 				}
 			}
 
