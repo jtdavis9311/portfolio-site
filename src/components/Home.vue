@@ -39,13 +39,13 @@
 			<a href="https://www.olo.com/" target="_blank">
 				<p>Olo</p>
 				<div class="technologies">
-					<Craft /><GraphQL />
+					<Craft /><Gridsome />
 				</div>
 			</a>
 			<a href="https://populum.com/" target="_blank">
 				<p>Populum</p>
 				<div class="technologies">
-					<Shopify /><GraphQL /><Contentful />
+					<Shopify /><Gridsome /><Contentful />
 				</div>
 			</a>
 			<a href="https://projectentrepreneur.org/" target="_blank">
@@ -87,8 +87,9 @@ import Github from './svgs/github';
 import Linkedin from './svgs/linkedin';
 import React from './svgs/react';
 import Vue from './svgs/vue';
-import GraphQL from './svgs/graphql';
+// import GraphQL from './svgs/graphql';
 import Contentful from './svgs/contentful';
+import Gridsome from './svgs/gridsome';
 import Craft from './svgs/craft';
 import Shopify from './svgs/shopify';
 import Wordpress from './svgs/wordpress';
@@ -101,8 +102,9 @@ export default {
 		Linkedin,
 		React,
 		Vue,
-		GraphQL,
+		// GraphQL,
 		Contentful,
+		Gridsome,
 		Craft,
 		Shopify,
 		Wordpress,
