@@ -3,7 +3,8 @@
 
 		<div class="left">
 			<h1>Jordan Davis</h1>
-			<p>Front End Engineer, <a class="milkshake" href="https://milkshake.studio/" target="_blank">Milkshake Studio</a></p>
+			<p>Front End Engineer,</p>
+			<p><a class="milkshake" href="https://milkshake.studio/" target="_blank">Milkshake Studio</a></p>
 
 			<div class="links">
 				<a href="https://github.com/jordantd5" target="_blank"><Github /></a>
@@ -45,7 +46,8 @@
 			<a href="https://populum.com/" target="_blank">
 				<p>Populum</p>
 				<div class="technologies">
-					<Shopify /><Gridsome /><Contentful />
+					<!-- threejs -->
+					<Shopify /><Contentful />
 				</div>
 			</a>
 			<a href="https://projectentrepreneur.org/" target="_blank">

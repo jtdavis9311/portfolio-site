@@ -22,9 +22,9 @@ div#home{
 		.milkshake{
 			transition: all 300ms 0ms ease;
 			transform-origin: left top;
-			&:hover{
-				transform: scale(1.5);
-			}
+			display: inline-block;
+
+			&:hover{ transform: scale(1.5); }
 		}
 
 		.links{
