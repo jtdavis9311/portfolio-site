@@ -80,6 +80,12 @@
 					<Craft />
 				</div>
 			</a>
+			<a href="https://www.figma.com/community/plugin/941336520474170939/Moodz" target="_blank">
+				<p>Moodz</p>
+				<div class="technologies">
+					<Figma />
+				</div>
+			</a>
 		</div>
 	</div>
 </template>
@@ -95,7 +101,7 @@ import Gridsome from './svgs/gridsome';
 import Craft from './svgs/craft';
 import Shopify from './svgs/shopify';
 import Wordpress from './svgs/wordpress';
-// import Figma from './svgs/figms';
+import Figma from './svgs/figma';
 
 export default {
 	name: 'Home',
@@ -110,7 +116,7 @@ export default {
 		Craft,
 		Shopify,
 		Wordpress,
-		// Figma,
+		Figma
 	},
 }
 
