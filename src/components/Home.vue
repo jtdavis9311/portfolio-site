@@ -13,6 +13,12 @@
 		</div>
 		
 		<div class="right">
+			<a href="https://www.1919.farm/" target="_blank">
+				<p>Ancient Groves</p>
+				<div class="technologies">
+					<Shopify />
+				</div>
+			</a>
 			<a href="https://chestertravels.com/" target="_blank">
 				<p>Chester</p>
 				<div class="technologies">
@@ -29,6 +35,12 @@
 				<p>I Endorse Booker</p>
 				<div class="technologies">
 					<React />
+				</div>
+			</a>
+			<a href="https://www.figma.com/community/plugin/941336520474170939/Moodz" target="_blank">
+				<p>Moodz</p>
+				<div class="technologies">
+					<Figma />
 				</div>
 			</a>
 			<a href="https://www.myclean.com/" target="_blank">
@@ -62,6 +74,12 @@
 					<Craft />
 				</div>
 			</a>
+			<a href="https://getstix.co/" target="_blank">
+				<p>Stix</p>
+				<div class="technologies">
+					<Shopify />
+				</div>
+			</a>
 			<a href="https://timeequities.com/" target="_blank">
 				<p>Time Equities Inc.</p>
 				<div class="technologies">
@@ -78,12 +96,6 @@
 				<p>Yellow Goat Design</p>
 				<div class="technologies">
 					<Craft />
-				</div>
-			</a>
-			<a href="https://www.figma.com/community/plugin/941336520474170939/Moodz" target="_blank">
-				<p>Moodz</p>
-				<div class="technologies">
-					<Figma />
 				</div>
 			</a>
 		</div>
